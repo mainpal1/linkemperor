@@ -42,7 +42,7 @@ class DomainsController extends AppController {
 		}
 		$newDomainData['domain_id'] = $newDomainData['id'];
 		unset($newDomainData['id']);
-		return $this->Domain->save($newDomainData) ? true : false;
+		return $this->Domain->save(array('Domain' => $newDomainData)) ? true : false;
 	}
 	
 	private function postNewDomain($domain_name, $needs_article) {
