@@ -80,7 +80,7 @@ class DATABASE_CONFIG {
 		'login' => 'cqtszlvxppmdbx',
 		'password' => 'Ze4cGr5sOWlOPxdCdMQsZRtRp_',
 		'database' => 'd55d1tgg8kjqc2',
-		'schema' => '',
+		'schema' => 'public',
 		'prefix' => '',
 		'encoding' => ''
 	);
