@@ -4,5 +4,5 @@
  * This Class Defines the Domain Model.
  */
 class Domain extends AppModel {
-	public $useTable = "domains";
+	public $useTable = "domain";
 }
