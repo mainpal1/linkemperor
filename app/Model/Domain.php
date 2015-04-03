@@ -5,4 +5,8 @@
  */
 class Domain extends AppModel {
 	public $useTable = "domain";
+	
+	public $validate = array(
+		'domain_id' => 'unique'
+	);
 }
