@@ -7,6 +7,9 @@ class Domain extends AppModel {
 	public $useTable = "domain";
 	
 	public $validate = array(
-		'domain_id' => 'unique'
+		'domain_id' => array(
+			'rule' => 'isUnique',
+			'message' => 'This domain is already there in the Database'
+		)
 	);
 }
