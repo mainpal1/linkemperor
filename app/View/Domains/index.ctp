@@ -1,4 +1,5 @@
-<?php echo $this->Html->link('Create Domain', array('action' => 'create'))?>
+<?php echo $this->Html->link('<i class="icon icon-home"></i> Home', '/', array('class' => 'btn', 'escape' => false))?>
+ <?php echo $this->Html->link('Create Domain', array('action' => 'create'), array('class' => 'btn'))?>
 
 <table>
 	<thead>

@@ -7,5 +7,5 @@
                 echo $this->Paginator->next(__('Next'), array('tag' => 'li','currentClass' => 'disabled'), null, array('tag' => 'li','class' => 'next disabled','disabledTag' => 'a'));
 				echo $this->Paginator->last('>>', array('tag' => 'li', 'title' => __('last'), 'escape' => false));
             ?>
-    <ul>
+    </ul>
  </div>

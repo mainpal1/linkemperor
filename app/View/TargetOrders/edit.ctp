@@ -20,14 +20,13 @@ form .submit .deleteButton:hover {
 .actions ul{display: inline-block; margin-left: 5px;}
 </style>
 <?php echo $this->Html->link('<i class="icon icon-home"></i> Home', '/', array('class' => 'btn', 'escape' => false))?>
- <?php echo $this->Html->link('Domain List', array('action' => 'index'), array('class' => 'btn'))?>
+ <?php echo $this->Html->link('Target Order List', array('action' => 'index'), array('class' => 'btn'))?>
 <br>
 <br>
-<?php echo $this->Form->create('Domain');?>
-<b><?php echo $this->Form->label('domain', $this->request->data['Domain']['domain']);?></b>
-<?php echo $this->Form->input('active', array('label' => "Activate", "type" => 'checkbox'));?>
-
-<?php echo $this->Form->submit('Update', array('div' => false, 'class' => 'btn btn-success'));?>
- <?php echo $this->Html->link('Delete', array('action' => 'delete', $this->request->data['Domain']['id']), array('class' => 'btn btn-danger'));?>
+<?php echo $this->Form->create('TargetOrder');?>
+<b><?php echo $this->Form->label('Target', $this->request->data['TargetOrder']['target']);?></b>
+<?php echo $this->Form->input('placement_url', array('label' => "Placement URL"));?>
+<?php echo $this->Form->submit('Update', array('div' => false, 'class' => "btn btn-success"));?>
+ <?php echo $this->Html->link('Delete', array('action' => 'delete', $this->request->data['TargetOrder']['id']), array('class' => 'btn btn-danger'));?>
 
 <?php echo $this->Form->end();?>
