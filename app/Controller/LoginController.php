@@ -31,6 +31,7 @@ class LoginController extends AppController {
 				$this->User->id = $this->Auth->user('id');
 				$this->User->saveField('password', $this->Auth->password($this->request->data['User']['password']));
 				$this->Session->setFlash(__("Password updated"), "default", array("class" => "message success"));
+				$this->redirect('/');
 			}else{
 				$this->Session->setFlash(__("Password mismatch"));
 			}
