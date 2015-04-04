@@ -39,7 +39,11 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<h1>Link Emperor Sample</h1>
+			<h1>Link Emperor Sample
+				<?php if($auth->user()){?>
+					<?php echo $this->Html->link('<i class="icon icon-off"></i> Logout', array('controller' => 'logout'), array('escape' => false, 'class' => 'btn', 'style' => 'float: right;'))?>
+				<?php }?>
+			</h1>
 		</div>
 		<div id="content">
 

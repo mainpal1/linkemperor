@@ -86,17 +86,6 @@ p {
 	padding: 0px 30px;
 	color: #fff;*/
 }
-#header h1 a {
-	color: #fff;
-	background: #003d4c;
-	font-weight: normal;
-	text-decoration: none;
-}
-#header h1 a:hover {
-	color: #fff;
-	background: #003d4c;
-	text-decoration: underline;
-}
 #content{
 	background: #fff;
 	clear: both;
@@ -108,9 +97,6 @@ p {
 	clear: both;
 	padding: 6px 10px;
 	text-align: right;
-}
-#header a, #footer a {
-	color: #fff;
 }
 
 /** containers **/
