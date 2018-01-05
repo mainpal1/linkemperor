@@ -1,6 +1,6 @@
 <?php
 /**
- * Static content controller. test1
+ * Static content controller. test1 local
  *
  * This file will render views from views/pages/
  *
