@@ -21,7 +21,7 @@
 App::uses('AppController', 'Controller');
 
 /**
- * Static content controller test local
+ * Static content controller test local again
  *
  * Override this controller by placing a copy in controllers directory of an application
  *
